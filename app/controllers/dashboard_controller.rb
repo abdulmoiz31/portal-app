@@ -1,6 +1,11 @@
 class DashboardController < ApplicationController
     
-    def home
+    def login
         
     end
+
+    def signup
+        
+    end
+    
 end

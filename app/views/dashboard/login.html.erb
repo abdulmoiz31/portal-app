@@ -15,7 +15,7 @@
   <!-- Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"> %>
   <!-- CSS Files -->
-  <%= stylesheet_link_tag "material-dashboard.css" %>
+  <%= stylesheet_link_tag "bootstrap.css" %>
 </head>
 
 <body class="bg-gray-200">
@@ -50,7 +50,7 @@
                   </div>
                   <p class="mt-4 text-sm text-center">
                     Don't have an account?
-                    <a href="../pages/sign-up.html" class="text-info font-weight-bold">Sign up</a>
+                    <%= link_to 'Sign up', signup_path, :class => "text-info font-weight-bold"%>
                   </p>
                 </form>
               </div>

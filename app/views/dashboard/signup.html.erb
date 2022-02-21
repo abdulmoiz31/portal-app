@@ -1,0 +1,104 @@
+<!--
+=========================================================
+* Material Dashboard 2 - v3.0.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/material-dashboard
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://www.creative-tim.com/license)
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+  <!-- Nucleo Icons -->
+  <%= stylesheet_link_tag "nucleo-icons.css" %>
+  <%= stylesheet_link_tag "nucleo-svg.css" %>
+  <!-- Font Awesome Icons -->
+  <%# <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"> %>
+  <!-- CSS Files -->
+  <%= stylesheet_link_tag "bootstrap.css" %>
+</head>
+
+<body class="">
+  <main class="main-content  mt-0">
+    <section>
+      <div class="page-header min-vh-100">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 start-0 text-center justify-content-center flex-column">
+              <div class="position-relative bg-gradient-primary h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center" style="background-image: url('https://previews.123rf.com/images/tcmman/tcmman1604/tcmman160400049/55751337-%E3%82%B8%E3%83%A7%E3%83%96-%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%93%E3%83%A5%E3%83%BC-%E3%82%B3%E3%83%B3%E3%82%BB%E3%83%97%E3%83%88%E9%BB%84%E8%89%B2%E3%81%AE%E8%83%8C%E6%99%AF%E4%B8%8A%E3%81%A7%E4%BA%8B%E6%A5%AD%E5%86%8D%E9%96%8B%E3%80%82.jpg'); background-size: cover;">
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column ms-auto me-auto ms-lg-auto me-lg-5">
+              <div class="card card-plain">
+                <div class="card-header">
+                  <h4 class="font-weight-bolder">Sign Up</h4>
+                  <p class="mb-0">Enter your email and password to register</p>
+                </div>
+                <div class="card-body">
+                  <form role="form">
+                    <div class="input-group input-group-outline mb-3">
+                      <label class="form-label">Name</label>
+                      <input type="text" class="form-control">
+                    </div>
+                    <div class="input-group input-group-outline mb-3">
+                      <label class="form-label">Email</label>
+                      <input type="email" class="form-control">
+                    </div>
+                    <div class="input-group input-group-outline mb-3">
+                      <label class="form-label">Password</label>
+                      <input type="password" class="form-control">
+                    </div>
+                    <div class="text-center">
+                      <button type="button" class="btn btn-lg bg-info text-white btn-lg w-100 mt-4 mb-0">Sign Up</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="card-footer text-center pt-0 px-lg-2 px-1">
+                  <p class="mb-2 text-sm mx-auto">
+                    Already have an account?
+                    <%= link_to 'Sign in', root_path, :class => "text-info text-gradient font-weight-bold"%>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--   Core JS Files   -->
+  <%= javascript_include_tag('popper.min.js') %>
+  <%= javascript_include_tag('bootstrap.min.js') %>
+  <%= javascript_include_tag('perfect-scrollbar.min.js') %>
+  <%= javascript_include_tag('smooth-scrollbar.min.js') %>
+  <script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+      var options = {
+        damping: '0.5'
+      }
+      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+  </script>
+  <!-- Github buttons -->
+  <%# <script async defer src="https://buttons.github.io/buttons.js"></script> %>
+  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+  <%= javascript_include_tag('material-dashboard.min.js') %>
+</body>
+
+</html>
